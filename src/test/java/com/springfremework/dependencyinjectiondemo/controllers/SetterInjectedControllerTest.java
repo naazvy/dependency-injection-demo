@@ -20,7 +20,5 @@ public class SetterInjectedControllerTest {
         assertEquals(GreetingServiceImpl.HELLO_FOLKS, setterInjectedController.sayHello());
     }
 
-    @Test
-    public void setGreetingService() {
-    }
+
 }
