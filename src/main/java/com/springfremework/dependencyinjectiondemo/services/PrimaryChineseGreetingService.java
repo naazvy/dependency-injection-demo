@@ -1,16 +1,16 @@
 package com.springfremework.dependencyinjectiondemo.services;
 
+
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 @Service
+@Profile("chi")
 @Primary
-@Profile("en")
-public class PrimaryGreetingService implements GreetingService {
-
+public class PrimaryChineseGreetingService implements GreetingService{
     @Override
     public String sayGreeting() {
-        return "Hello from the PrimaryGreetingService";
+        return "嗨巴索塔！";
     }
 }
